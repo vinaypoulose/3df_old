@@ -36,7 +36,7 @@ function onSubmit(e) {
 
 function onTrackerSubmit(timeStamp, responseId, submitter, idGoogleSheetUserFileConverted, urlUserFile) {
 
-  const schoolDashboardUrl = "https://docs.google.com/spreadsheets/d/1tvRFsubV7C0osz2sQ1jdvAugahNd7fleGNNjR8DkCHM/edit";
+  const schoolDashboardUrl = "https://docs.google.com/spreadsheets/d/1d1WprUd0T4zkYQWM8tjbOzaOaMhPBlcGFdEmvmqR7AA/edit";
   const multiAssmtTemplateUrl = "https://docs.google.com/spreadsheets/d/15-VQCg5M8vl8ZTzKu-Pmf_MjndM0kBpOmEeoUabfgQc/edit";
   const scoreBasedTemplateUrl = "https://docs.google.com/spreadsheets/d/1KCEHdEXlTwgkjjfqH2nP7EM8B9W1Y9yxTaV5pajcW8g/edit";
   const rubricBasedTemplateUrl = "https://docs.google.com/spreadsheets/d/1DA1c__U81IXS4ZwWSOj-ToXz1qAtReQSKyDj65gpkyc/edit";
@@ -232,7 +232,7 @@ function onTrackerSubmit(timeStamp, responseId, submitter, idGoogleSheetUserFile
 
     for (j = 2; j < rowPermissionForClass.length && j < permissionsDb[0].length; j++) {
 
-      if (permissionsDb[0][j].toString().toLowerCase() == subject.toString().toLowerCase()) {
+      if (permissionsDb[0][j] == subject) {
 
         editorForSubjectForClass = rowPermissionForClass[j];
 
@@ -1064,7 +1064,7 @@ function CreateGoogleSpreadSheet(userSubmittedTrackerId) {
 
   var userSubmittedFileContents = userSubmittedTrackerFile.getBlob();
 
-  const tempFolderId = "1IwcDqIdZLQq_PTlY__F0OOVT6Tvu1mW6";
+  const tempFolderId = "16KNgCTFwr1Jxm2iqspb_7P3ATxggnGhT";
 
   var resource = {
     title: userSubmittedTrackerFile.getName(),
